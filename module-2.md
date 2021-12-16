@@ -6,6 +6,8 @@
   - [Amazon EC2 Configurations](#amazon-ec2-configurations)
   - [Amazon EC2 Overview](#amazon-ec2-overview)
     - [How Amazon EC2 Works](#how-amazon-ec2-works)
+  - [Amazon EC2 Instance Types](#amazon-ec2-instance-types)
+  - [Additional Resources](#additional-resources)
 
 ## Learning Objectives
 
@@ -60,4 +62,24 @@
 2. **Connect**
    - Next, connect to the instance.  You can connect to the instance in several ways.  Your programs and applications have multiple different methods to connect directly to the instance and exchange data.  Users can also connect to the instance by logging in and accessing the computer desktop
 3. **Use**
-   - After you have connected to the instance, you can begin using it.  You can run commands to install software, add storage, copy and organize files, and more. 
+   - After you have connected to the instance, you can begin using it.  You can run commands to install software, add storage, copy and organize files, and more.
+
+## Amazon EC2 Instance Types
+
+Each Amazon EC2 instance type is grouped under an instance family, which are optimized for certain types of tasks.  They offer different types of CPU, Storage, Networking, and Security features based on what you need.
+
+- **EC2 Instance Families**
+  - **General Purpose**
+    - Balanced resources
+    - Can be used for a variety of diverse workloads such as web servers or code repositories
+  - **Compute Optimized**
+    - For compute intensive tasks such as gaming servers, High performance computing (HPC), and scientific modeling
+  - **Memory Optimized** - For memory intensive tasks
+  - **Accelerated Computing**
+    - Good for floating point number calculations, graphics processing, or data pattern matching
+    - Utilizes hardware accelerators
+  - **Storage Optimized** - Good for high performance on locally stored data
+
+## Additional Resources
+
+[Amazon EC2 instance types](https://aws.amazon.com/ec2/instance-types/)
