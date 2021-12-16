@@ -8,12 +8,13 @@
     - [How Amazon EC2 Works](#how-amazon-ec2-works)
   - [Amazon EC2 Instance Types](#amazon-ec2-instance-types)
     - [Amazon EC2 Pricing](#amazon-ec2-pricing)
-  - [Amazon EC2 Scaling](#amazon-ec2-scaling)
-    - [Amazon EC2 Auto Scaling](#amazon-ec2-auto-scaling)
+    - [Amazon EC2 Scaling](#amazon-ec2-scaling)
+      - [Amazon EC2 Auto Scaling](#amazon-ec2-auto-scaling)
   - [Directing Traffic with Elastic Load Balancing](#directing-traffic-with-elastic-load-balancing)
   - [Messaging and Queueing](#messaging-and-queueing)
     - [Amazon Simple Queue Service (Amazon SQS)](#amazon-simple-queue-service-amazon-sqs)
     - [Amazon Simple Notification Service (Amazon SNS)](#amazon-simple-notification-service-amazon-sns)
+  - [Additional Compute Services](#additional-compute-services)
   - [Trivia](#trivia)
   - [Additional Resources](#additional-resources)
 
@@ -106,12 +107,12 @@ Each Amazon EC2 instance type is grouped under an instance family, which are opt
   - **Dedicated Hosts**
     - Used for meeting certain compliance requirements and no one else will share your host
 
-## Amazon EC2 Scaling
+### Amazon EC2 Scaling
 
 - **Scalability** involves beginning with only the resources you need and designing your architecture to automatically respond to changing demand by scaling in or out.  As a result, you pay for only the resources you use.
 - You can achieve automatic scaling by using the AWS service **Amazon EC2 Auto Scaling**
 
-### Amazon EC2 Auto Scaling
+#### Amazon EC2 Auto Scaling
 
 - If you've ever tried to access a website that wouldn't load and frequently timed out, the website might have received more requests than it was able to handle.  This situation is similar to waiting in a long line a coffee shop, where there is only one barista to take orders from customers.
 - Amazon EC2 Auto Scaling enables you to automatically add or remove EC2 instances in response to changing application demand.  By Automatically scaling your instances in and out as needed, you are able to maintain a greater sense of application availability and will only pay for what you use.
@@ -152,6 +153,10 @@ Each Amazon EC2 instance type is grouped under an instance family, which are opt
 - In practice, this means you can send one message to a topic and have it span out to all of the topic's subscribers.
 - These subscribers can also be endpoints, meaning they can be things such as *SQS Queues*, *Lambda Functions*, and *HTTP/HTTPS Web Hooks*
 - Additionally SNS can be used to fan out messages to end users via Mobile Push, SMS, and Email
+
+## Additional Compute Services
+
+- EC2 requires that you set up and manage your fleet of instances over time.  When using EC2, you're responsible for patching your instances when new software packages come out, setting up the scaling of those instances, as well as ensuring that you've architected your solutions to be hosted in a highly available manner.
 
 ## Trivia
 
