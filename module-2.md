@@ -8,6 +8,8 @@
     - [How Amazon EC2 Works](#how-amazon-ec2-works)
   - [Amazon EC2 Instance Types](#amazon-ec2-instance-types)
   - [Amazon EC2 Pricing](#amazon-ec2-pricing)
+  - [Amazon EC2 Scaling](#amazon-ec2-scaling)
+    - [Amazon EC2 Auto Scaling](#amazon-ec2-auto-scaling)
   - [Additional Resources](#additional-resources)
 
 ## Learning Objectives
@@ -98,6 +100,24 @@ Each Amazon EC2 instance type is grouped under an instance family, which are opt
     - Good for batch workloads
   - **Dedicated Hosts**
     - Used for meeting certain compliance requirements and no one else will share your host
+
+## Amazon EC2 Scaling
+
+- **Scalability** involves beginning with only the resources you need and designing your architecture to automatically respond to changing demand by scaling in or out.  As a result, you pay for only the resources you use.
+- You can achieve automatic scaling by using the AWS service **Amazon EC2 Auto Scaling**
+
+### Amazon EC2 Auto Scaling
+
+- If you've ever tried to access a website that wouldn't load and frequently timed out, the website might have received more requests than it was able to handle.  This situation is similar to waiting in a long line a coffee shop, where there is only one barista to take orders from customers.
+- Amazon EC2 Auto Scaling enables you to automatically add or remove EC2 instances in response to changing application demand.  By Automatically scaling your instances in and out as needed, you are able to maintain a greater sense of application availability and will only pay for what you use.
+- **Dynamic Scaling** - Responds to changing demand
+- **Predictive Scaling** - Automatically schedules the right number of Amazon EC2 instances based on the predicted demand
+- To scale faster, you can use dynamic scaling and predictive scaling together.
+- There are two types of scaling, ***up*** and ***out***
+  - **Up** - Adding more power to the machines that are running
+  - **Out** - Adding more instances to the host
+- When you create an Auto Scaling group, you can set the **minimum number**, **maximum number**, and **desired capacity** of EC2 instances
+  - If you do not specify the desired number of Amazon EC2 instances in an Auto Scaling group, the desired capacity defaults to your minimum capacity.
 
 ## Additional Resources
 
