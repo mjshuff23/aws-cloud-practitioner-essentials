@@ -7,6 +7,8 @@
     - [Server Instances](#server-instances)
   - [Cloud Computing](#cloud-computing)
     - [Deployment Models for Cloud Computing](#deployment-models-for-cloud-computing)
+    - [Benefits of Cloud Computing](#benefits-of-cloud-computing)
+    - [Additional Resources](#additional-resources)
 
 ## Introduction
 
@@ -57,3 +59,34 @@ Almost all modern computing centers around a basic client/server model.  Basical
     - Integrate cloud-based resources with legacy IT applications
     - In a **hybrid development**, cloud-based resources are connected to on-premises infrastructure.  You might want to use this approach in a number of situations.  For example, you have legacy applications that are better maintained on premises, or government regulations require your business to keep certain records on premises
     - For example, suppose that a company wants to use cloud services that can automate batch data processing and analytics.  However, the company has several legacy applications that are more suitable on premises and will not be migrated to the cloud.  With a hybrid deployment, the company would be able to keep the legacy applications on premises while benefiting from the data and analytics services that run in the cloud 
+
+### Benefits of Cloud Computing
+
+Consider why a company might choose to take a particular cloud computing approach when addressing business needs.
+
+- **Trade upfront expense for variable expense**
+  - Upfront expense refers to data centers, physical servers, and other resources that you would need to invest in before using them.  Variable expense means you only pay for computing resources you consume instead of investing heavily in data centers and servers before you know how you're going to use them
+  - By taking a cloud computing approach that offers the benefit of variable expense, companies can implement innovative solutions while saving on costs
+- **Stop spending money to run and maintain data centers**
+  - Computing in data centers often requires you to spend more money and time managing infrastructure and servers
+  - A benefit of cloud computing is the ability to focus less on these tasks and more on your applications and customers
+- **Stop guessing capacity**
+  - With cloud computing, you don't have to predict how much infrastructure capacity you will need before deploying an application
+  - For example, you can launch Amazon EC2 instances when needed, and only pay for the compute time you use.  Instead of paying for unused resources or having to deal with limited capacity, you can access only the capacity that you need.  You can also scale in or out in response to demand
+- **Benefit from massive economies of scale**
+  - By using cloud computing, you can achieve a lower variable cost than you can get on your own
+  - Because usage from hundreds of thousands of customers can aggregate in the cloud, providers, such as AWS, can achieve higher economies of scale.  The economy of scale translates into lower pay-as-you-go prices
+- **Increase speed and agility**
+  - The flexibility of cloud computing makes it easier for you to develop and deploy applications
+  - This flexibility provides you with more time to experiment and innovate.  When computing in data centers, it may take weeks to obtain new resources that you need.  By comparison, cloud computing enables you to access new resources within minutes
+- **Go global in minutes**
+  - The global footprint of the AWS Cloud enables you to deploy applications to customers around the world quickly, while providing them with low latency.  This means that even if you are located in a different part of the world than your customers, customers are able to access your applications with minimal delays
+
+### Additional Resources
+
+- [AWS Glossary](https://docs.aws.amazon.com/general/latest/gr/glos-chap.html)
+- [Whitepaper: Overview of Amazon Web Services](https://d0.awsstatic.com/whitepapers/aws-overview.pdf)
+- [AWS Fundamentals: Overview](https://aws.amazon.com/getting-started/fundamentals-overview/)
+- [What is cloud computing?](https://aws.amazon.com/what-is-cloud-computing/)
+- [Types of cloud computing](https://aws.amazon.com/types-of-cloud-computing/)
+- [Cloud computing with AWS](https://aws.amazon.com/what-is-aws/)
