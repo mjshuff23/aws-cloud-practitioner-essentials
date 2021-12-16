@@ -1,6 +1,6 @@
-# Module 1 - Introduction to Amazon Web Services- [Module 1 - Introduction to Amazon Web Services](#module-1---introduction-to-amazon-web-services)
+# Module 1 - Introduction to Amazon Web Services
 
-- [Module 1 - Introduction to Amazon Web Services- Module 1 - Introduction to Amazon Web Services](#module-1---introduction-to-amazon-web-services--module-1---introduction-to-amazon-web-services)
+- [Module 1 - Introduction to Amazon Web Services](#module-1---introduction-to-amazon-web-services)
   - [Learning Objectives](#learning-objectives)
   - [Introduction](#introduction)
     - [Services](#services)
