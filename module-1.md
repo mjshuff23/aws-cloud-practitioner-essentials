@@ -9,6 +9,7 @@
     - [Deployment Models for Cloud Computing](#deployment-models-for-cloud-computing)
     - [Benefits of Cloud Computing](#benefits-of-cloud-computing)
     - [Additional Resources](#additional-resources)
+  - [Notes](#notes)
 
 ## Introduction
 
@@ -90,3 +91,12 @@ Consider why a company might choose to take a particular cloud computing approac
 - [What is cloud computing?](https://aws.amazon.com/what-is-cloud-computing/)
 - [Types of cloud computing](https://aws.amazon.com/types-of-cloud-computing/)
 - [Cloud computing with AWS](https://aws.amazon.com/what-is-aws/)
+
+## Notes
+
+- **What is cloud computing?**
+  - On-demand delivery of IT resources and applications through the internet with pay-as-you-go pricing
+- **What is another name for on-premises deployment?**
+  - Private cloud deployment
+- **How does the scale of cloud computing help you to save costs?**
+  - The aggregated cloud usage from a large number of customers results in lower pay-as-you-go prices.
