@@ -6,7 +6,7 @@
     - [Amazon EC2 Configurations](#amazon-ec2-configurations)
     - [Amazon EC2 Overview](#amazon-ec2-overview)
     - [How Amazon EC2 Works](#how-amazon-ec2-works)
-  - [Amazon EC2 Instance Types](#amazon-ec2-instance-types)
+    - [Amazon EC2 Instance Types](#amazon-ec2-instance-types)
     - [Amazon EC2 Pricing](#amazon-ec2-pricing)
     - [Amazon EC2 Scaling](#amazon-ec2-scaling)
       - [Amazon EC2 Auto Scaling](#amazon-ec2-auto-scaling)
@@ -73,7 +73,7 @@
 3. **Use**
    - After you have connected to the instance, you can begin using it.  You can run commands to install software, add storage, copy and organize files, and more.
 
-## Amazon EC2 Instance Types
+### Amazon EC2 Instance Types
 
 Each Amazon EC2 instance type is grouped under an instance family, which are optimized for certain types of tasks.  They offer different types of CPU, Storage, Networking, and Security features based on what you need.
 
