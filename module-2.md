@@ -3,14 +3,18 @@
 - [Module 2 - Compute in the Cloud](#module-2---compute-in-the-cloud)
   - [Learning Objectives](#learning-objectives)
   - [Amazon Elastic Compute Cloud (Amazon EC2)](#amazon-elastic-compute-cloud-amazon-ec2)
-  - [Amazon EC2 Configurations](#amazon-ec2-configurations)
-  - [Amazon EC2 Overview](#amazon-ec2-overview)
+    - [Amazon EC2 Configurations](#amazon-ec2-configurations)
+    - [Amazon EC2 Overview](#amazon-ec2-overview)
     - [How Amazon EC2 Works](#how-amazon-ec2-works)
   - [Amazon EC2 Instance Types](#amazon-ec2-instance-types)
-  - [Amazon EC2 Pricing](#amazon-ec2-pricing)
+    - [Amazon EC2 Pricing](#amazon-ec2-pricing)
   - [Amazon EC2 Scaling](#amazon-ec2-scaling)
     - [Amazon EC2 Auto Scaling](#amazon-ec2-auto-scaling)
-    - [Directing Traffic with Elastic Load Balancing](#directing-traffic-with-elastic-load-balancing)
+  - [Directing Traffic with Elastic Load Balancing](#directing-traffic-with-elastic-load-balancing)
+  - [Messaging and Queueing](#messaging-and-queueing)
+    - [Amazon Simple Queue Service (Amazon SQS)](#amazon-simple-queue-service-amazon-sqs)
+    - [Amazon Simple Notification Service (Amazon SNS)](#amazon-simple-notification-service-amazon-sns)
+  - [Trivia](#trivia)
   - [Additional Resources](#additional-resources)
 
 ## Learning Objectives
@@ -32,7 +36,7 @@
   - **Multitenancy** - Sharing underlying hardware between virtual machines.  Hypervisors manage this
   - Although multiple EC2 instances run off the same host, they are unaware of each other and don't have access to each other, keeping your applications secure
   
-## Amazon EC2 Configurations
+### Amazon EC2 Configurations
 
 - You can choose the OS of your EC2 instances:
   - Windows
@@ -45,7 +49,7 @@
 - Amazon EC2 instances are scalable.  You can start with a small instance, and make it larger or smaller as needed.  This is known as **vertical scaling**
 - You also control the networking of your EC2 instance.  It can be private, public, or accessible by only certain individuals and teams
 
-## Amazon EC2 Overview
+### Amazon EC2 Overview
 
 - Imagine you are responsible for the architecture of your company's resources and need to support new websites.  With tradition on-premises resources, you have to do the following:
   - Spend money upfront to purchase hardware
@@ -84,7 +88,7 @@ Each Amazon EC2 instance type is grouped under an instance family, which are opt
     - Utilizes hardware accelerators
   - **Storage Optimized** - Good for high performance on locally stored data
 
-## Amazon EC2 Pricing
+### Amazon EC2 Pricing
 
 - Amazon EC2 has multiple purchasing options:
   - **On-Demand**
@@ -120,13 +124,41 @@ Each Amazon EC2 instance type is grouped under an instance family, which are opt
 - When you create an Auto Scaling group, you can set the **minimum number**, **maximum number**, and **desired capacity** of EC2 instances
   - If you do not specify the desired number of Amazon EC2 instances in an Auto Scaling group, the desired capacity defaults to your minimum capacity.
 
-### Directing Traffic with Elastic Load Balancing
+## Directing Traffic with Elastic Load Balancing
 
 - **Elastic Load Balancing** is the AWS service that automatically distributes incoming application traffic across multiple resources, such as Amazon EC2 instances.  Utilizing Elastic Load Balancing with Auto Scaling groups allows you to properly distribute traffic in a high performance, cost-efficient, highly available, automatically scalable way.
 - A load balancer acts as a single point of contact for all incoming web traffic to your Auto Scaling group.  This means that as you add or remove EC2 instances in response to the amount of incoming traffic, these requests route to the load balancer first.  Then, the requests spread across multiple resources that will handle them.
 - Elastic Load Balancing is a **Regional Construct**, which is a higher level than individual EC2 instances, allowing it to automatically be highly available with little effort on your part
 - We can use Elastic Load Balancing to properly distribute traffic between the Front End and Back End as well, creating de-coupled architecture
 
+## Messaging and Queueing
+
+- If applications communicate directly, we call it, **Tightly Coupled Architecture**.  A hallmark of tightly coupled architecture is that if one component of the applications fails, it causes other components or the whole system to fail
+- **Loosely Coupled Architecture** is a much better design pattern.  It is where a single failure won't cause cascading failures
+  - By adding a **Message Queue** between two applications, we create a buffer between our applications.  If applications B fails, applications A doesn't experience a disruption.  Messages from application A will just keep getting passed to the Message Queue until application B is back online to process them
+
+### Amazon Simple Queue Service (Amazon SQS)
+
+- Allows you to send, store, and receive messages between software components at any volume without losing messages or requiring any other service to be immediately available
+- A good example is a coffee shop.  Our cashier would be an EC2 instance (server) who passes the customer's (client) order to an order board (Amazon SQS) that the barista (server) will process when available
+- Data contained within a message is called a **payload** and is protected until delivery
+- These scale automatically, are reliable, and are easily configured and used
+
+### Amazon Simple Notification Service (Amazon SNS)
+
+- Similar to SQS in that it is used to send out messages to services, but it can also send out notifications to end users
+- It does this in a different way, **Publishing and Subscribing** in what is called a **Pub/Sub Model**
+- You can create **SNS Topics**, which is simple a channel for messages to be delivered.  You then configure subscribers to that topic and find the published messages for those subscribers. 
+- In practice, this means you can send one message to a topic and have it span out to all of the topic's subscribers.
+- These subscribers can also be endpoints, meaning they can be things such as *SQS Queues*, *Lambda Functions*, and *HTTP/HTTPS Web Hooks*
+- Additionally SNS can be used to fan out messages to end users via Mobile Push, SMS, and Email
+
+## Trivia
+
+- Which AWS service is the best choice for publishing messages to subscribers?
+  - Amazon Simple Notification Service (Amazon SNS)
+
 ## Additional Resources
 
 [Amazon EC2 instance types](https://aws.amazon.com/ec2/instance-types/)
+[Amazon SNS](https://aws.amazon.com/sns)
