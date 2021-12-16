@@ -160,5 +160,5 @@ Each Amazon EC2 instance type is grouped under an instance family, which are opt
 
 ## Additional Resources
 
-[Amazon EC2 instance types](https://aws.amazon.com/ec2/instance-types/)
-[Amazon SNS](https://aws.amazon.com/sns)
+- [Amazon EC2 instance types](https://aws.amazon.com/ec2/instance-types/)
+- [Amazon SNS](https://aws.amazon.com/sns)
