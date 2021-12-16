@@ -7,6 +7,7 @@
   - [Amazon EC2 Overview](#amazon-ec2-overview)
     - [How Amazon EC2 Works](#how-amazon-ec2-works)
   - [Amazon EC2 Instance Types](#amazon-ec2-instance-types)
+  - [Amazon EC2 Pricing](#amazon-ec2-pricing)
   - [Additional Resources](#additional-resources)
 
 ## Learning Objectives
@@ -79,6 +80,24 @@ Each Amazon EC2 instance type is grouped under an instance family, which are opt
     - Good for floating point number calculations, graphics processing, or data pattern matching
     - Utilizes hardware accelerators
   - **Storage Optimized** - Good for high performance on locally stored data
+
+## Amazon EC2 Pricing
+
+- Amazon EC2 has multiple purchasing options:
+  - **On-Demand**
+    - Only pay for what you run.  No long term commitments or contracts are needed.  This is great for when you're just getting started
+  - **Savings Plans**
+    - Offers low prices on EC2 usage in exchange for a commitment measured in dollars per hour for a 1-year or 3-year term
+    - Very flexible and can provide savings of up to 72%
+  - **Reserved Instances**
+    - Used for steady state workloads or workloads with predictable usage and can offer up to a 75% discount (1 or 3-year term)
+    - Can be paid *all upfront*, *partial upfront*, *no upfront*
+  - **Spot Instances**
+    - Request spare Amazon EC2 instance capacity for up to 90% off the on-demand price
+    - Amazon can reclaim the instance any time they need, and they give you a 2 minute warning
+    - Good for batch workloads
+  - **Dedicated Hosts**
+    - Used for meeting certain compliance requirements and no one else will share your host
 
 ## Additional Resources
 
