@@ -10,6 +10,7 @@
   - [Amazon EC2 Pricing](#amazon-ec2-pricing)
   - [Amazon EC2 Scaling](#amazon-ec2-scaling)
     - [Amazon EC2 Auto Scaling](#amazon-ec2-auto-scaling)
+    - [Directing Traffic with Elastic Load Balancing](#directing-traffic-with-elastic-load-balancing)
   - [Additional Resources](#additional-resources)
 
 ## Learning Objectives
@@ -118,6 +119,13 @@ Each Amazon EC2 instance type is grouped under an instance family, which are opt
   - **Out** - Adding more instances to the host
 - When you create an Auto Scaling group, you can set the **minimum number**, **maximum number**, and **desired capacity** of EC2 instances
   - If you do not specify the desired number of Amazon EC2 instances in an Auto Scaling group, the desired capacity defaults to your minimum capacity.
+
+### Directing Traffic with Elastic Load Balancing
+
+- **Elastic Load Balancing** is the AWS service that automatically distributes incoming application traffic across multiple resources, such as Amazon EC2 instances.  Utilizing Elastic Load Balancing with Auto Scaling groups allows you to properly distribute traffic in a high performance, cost-efficient, highly available, automatically scalable way.
+- A load balancer acts as a single point of contact for all incoming web traffic to your Auto Scaling group.  This means that as you add or remove EC2 instances in response to the amount of incoming traffic, these requests route to the load balancer first.  Then, the requests spread across multiple resources that will handle them.
+- Elastic Load Balancing is a **Regional Construct**, which is a higher level than individual EC2 instances, allowing it to automatically be highly available with little effort on your part
+- We can use Elastic Load Balancing to properly distribute traffic between the Front End and Back End as well, creating de-coupled architecture
 
 ## Additional Resources
 
