@@ -1,6 +1,7 @@
 # Module 1 - Introduction to Amazon Web Services- [Module 1 - Introduction to Amazon Web Services](#module-1---introduction-to-amazon-web-services)
 
 - [Module 1 - Introduction to Amazon Web Services- Module 1 - Introduction to Amazon Web Services](#module-1---introduction-to-amazon-web-services--module-1---introduction-to-amazon-web-services)
+  - [Learning Objectives](#learning-objectives)
   - [Introduction](#introduction)
     - [Services](#services)
     - [Cloud Compute Model](#cloud-compute-model)
@@ -10,6 +11,12 @@
     - [Benefits of Cloud Computing](#benefits-of-cloud-computing)
     - [Additional Resources](#additional-resources)
   - [Notes](#notes)
+
+## Learning Objectives
+
+- Summarize the benefits of AWS
+- Describe the differences between on-demand delivery and cloud deployments
+- Summarize the pay-as-you-go pricing model
 
 ## Introduction
 
