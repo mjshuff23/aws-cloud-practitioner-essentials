@@ -39,3 +39,24 @@ If you run your own data center, you have to decide what to do if and when disas
   - Availability Zones can be as far as 10 miles apart and keep single digit latency communication between other Availability Zones in the Region, allowing your business to stay up and running when failures occur
   - It is suggested to run your apps across at least two Availability Zones in a Region, which means redundantly deploying it in two AZs
 - Regionally Scoped AWS services have a high availability automatically
+
+### Edge Locations
+
+- When selecting a Region, a primary concern is proximity to your customers, but what if your customers are all over the world?
+- Caching data in locations that are close to customers is the primary idea behind **Content Delivery Networks (CDN)**
+- **Amazon CloudFront** is Amazon's CDN
+  - Helps deliver data, video, applications, and APIs to customers with low latency and high transfer speeds
+  - Utilizes **Edge Locations** from around the world to help accelerate communication with users all around the globe
+  - Edge Locations are separate from Regions, so you can push content from a Region into a collection of Edge Locations around the world in order to accelerate communication and content delivery
+- **Amazon Route 53**
+  - A **Domain Name Service (DNS)** that directs customers to the direct web locations with reliable, low latency
+- **AWS Outposts**
+  - When a company wants to install and use an AWS on it's premises, AWS will come install the services right inside your own data center
+  - Still owned and operated by AWS, but with functionality strict to your premises
+  - Not a solution most customers would need
+
+### Key Points
+
+- Regions are geographically isolated areas
+- Regions contain Availability Zones, allowing you to run across physically separated buildings 10s of miles apart with single digit latency
+- Edge Locations run Amazon CloudFront to help get content to your customers quicker and more reliably anywhere in the world
