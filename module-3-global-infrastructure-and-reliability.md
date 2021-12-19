@@ -1,5 +1,19 @@
 # Module 3 - Global Infrastructure and Reliability
 
+- [Module 3 - Global Infrastructure and Reliability](#module-3---global-infrastructure-and-reliability)
+  - [Learning Objectives](#learning-objectives)
+  - [Introduction](#introduction)
+  - [AWS Global Infrastructure](#aws-global-infrastructure)
+    - [Availability Zones](#availability-zones)
+    - [Edge Locations](#edge-locations)
+    - [Key Points](#key-points)
+  - [How to Provision AWS Resources](#how-to-provision-aws-resources)
+    - [AWS Elastic Beanstalk](#aws-elastic-beanstalk)
+    - [AWS CloudFormation](#aws-cloudformation)
+  - [Summary](#summary)
+  - [Additional Resources](#additional-resources)
+  - [Key Notes](#key-notes)
+
 ## Learning Objectives
 
 - Summarize the benefits of the AWS Global Infrastructure
