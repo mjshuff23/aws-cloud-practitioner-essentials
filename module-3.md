@@ -126,3 +126,22 @@ We covered:
 - What **Edge Locations** are and how you can deploy content there to speed up delivery to your customers, and how this is accomplished by utilizing **Amazon CloudFront**
 - Edge devices like **AWS Outposts** which allow you to run AWS infrastructure right in your own data center
 - Provisioning resources through various options, such as the **AWS Management Console**, the **SDK**, **CLI**, **AWS Elastic Beanstalk**, and **AWS CloudFormation**, where you set up your own infrastructure as code
+
+## Additional Resources
+
+- [Global Infrastructure](https://aws.amazon.com/about-aws/global-infrastructure/)
+- [Interactive Map of the AWS Global Infrastructure](https://www.infrastructure.aws/)
+- [Regions and Availability Zones](https://aws.amazon.com/about-aws/global-infrastructure/regions_az)
+- [AWS Networking and Content Delivery Blog](https://aws.amazon.com/blogs/networking-and-content-delivery/)
+- [Tools to Build on AWS](https://aws.amazon.com/tools/)
+- [AWS Customer Stories: Content Delivery](https://aws.amazon.com/solutions/case-studies/?customer-references-cards.sort-by=item.additionalFields.publishedDate&customer-references-cards.sort-order=desc&awsf.customer-references-location=*all&awsf.customer-references-segment=*all&awsf.customer-references-product=product%23vpc%7Cproduct%23api-gateway%7Cproduct%23cloudfront%7Cproduct%23route53%7Cproduct%23directconnect%7Cproduct%23elb&awsf.customer-references-category=category%23content-delivery)
+
+## Key Notes
+
+- A **Region** consists of two or more **Availability Zones**
+- The two most important factors that should be considered when choosing a Region are:
+  1. Compliance with data governance and legal requirements
+  2. Proximity to your customers 
+- **Amazon CloudFront** is a global content delivery service.
+- **Amazon CloudFront** uses **Edge Locations** to cache copies of content for faster delivery to customers
+- **AWS Outposts** extends AWS infrastructure and services to your on-premises data center
