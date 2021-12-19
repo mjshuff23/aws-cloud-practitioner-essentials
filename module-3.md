@@ -106,3 +106,23 @@ If you run your own data center, you have to decide what to do if and when disas
 - Manages all the calls to the backend AWS APIs for you.
 - Can run the same CloudFormation template in multiple accounts or multiple regions, and it will create identical environments across them.
 - There is less room for human error as it is a totally automated process.
+
+## Summary
+
+In Module 3, you learned the following concepts:
+
+- AWS Regions and Availability Zones
+- Edge locations and Amazon CloudFront
+- The AWS Management Console, AWS CLI, and SDKs
+- AWS Elastic Beanstalk
+- AWS CloudFormation
+
+We covered:
+
+- How logical clusters of data centers make up **Availability Zones**, which in turn make up **Regions**, which are spread globally.
+- You should deploy across two Availability Zones
+- Regional data is isolate from other regions unless explicitly stating otherwise
+  - Some AWS services like **Elastic Load Balancing**, **Amazon SQS**, and **Amazon SNS** already do this for you.
+- What **Edge Locations** are and how you can deploy content there to speed up delivery to your customers, and how this is accomplished by utilizing **Amazon CloudFront**
+- Edge devices like **AWS Outposts** which allow you to run AWS infrastructure right in your own data center
+- Provisioning resources through various options, such as the **AWS Management Console**, the **SDK**, **CLI**, **AWS Elastic Beanstalk**, and **AWS CloudFormation**, where you set up your own infrastructure as code
