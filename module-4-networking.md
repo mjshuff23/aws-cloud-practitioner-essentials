@@ -7,6 +7,7 @@
     - [Public Traffic](#public-traffic)
     - [Private Traffic](#private-traffic)
   - [Subnets and Network Access Control Lists](#subnets-and-network-access-control-lists)
+  - [Global Networking](#global-networking)
   - [Key Notes](#key-notes)
   - [Additional Resources](#additional-resources)
 
@@ -67,7 +68,18 @@
   5. **Distributed Denial of Service (DDoS) Prevention**
   6. **Data Integrity**
   7. **Encryption**
--  
+
+## Global Networking
+
+- **Amazon Route 53** is Amazon's Domain Name Service (DNS), and it is highly available and scalable
+  - **Domain Name Service**'s translate website plain language addresses to IP addresses that computers can use
+  - Can direct traffic through different different endpoints using several different routing policies, such as:
+    1. Latency-Based Routing
+    2. Geolocation DNS - Direct traffic based on where the customer is located
+    3. Geoproximity Routing
+    4. Weighed Round Robin
+  - Can be used to register domain names, so you can buy an address on AWS
+- **Amazon CloudFront** also is a key aspect of Amazon's global networking
 
 ## Key Notes
 
@@ -77,6 +89,12 @@
   - **Public Subnet** - Support the customer-facing website
   - **AWS Direct Connect** - Establish a dedicated connection between the on-premises data center and the VPC
 - An AWS account's default Network Access Control List is stateless and allows all inbound and outbound traffic
+- **DNS Resolution** is the translation of a domain name to an IP address
+- *Your company has an application that uses Amazon EC2 instances to run the customer-facing website and Amazon RDS database instances to store customers’ personal information. How should the developer configure the VPC according to best practices?*
+  - Place the Amazon EC2 instances in a public subnet and the Amazon RDS database instances in a private subnet
+- **Security Group**'s are stateful and deny all inbound traffic by default
+- **Internet Gateway**'s are used to connect a VPC to the internet
+- **Amazon Route 53** is used to manage the DNS records for domain names
 
 ## Additional Resources
 
@@ -84,3 +102,8 @@
 - [AWS Direct Connect](https://aws.amazon.com/directconnect/)
 - [Network Access Control List (Network ACL)(](https://docs.aws.amazon.com/vpc/latest/userguide/vpc-network-acls.html)
 - [Security Groups](https://docs.aws.amazon.com/vpc/latest/userguide/VPC_SecurityGroups.html)
+- [Amazon Route 53](https://aws.amazon.com/route53)
+- [Networking and Content Delivery on AWS](https://aws.amazon.com/products/networking)
+- [AWS Networking & Content Delivery Blog](https://aws.amazon.com/blogs/networking-and-content-delivery/)
+- [What is Amazon VPC?](https://docs.aws.amazon.com/vpc/latest/userguide/what-is-amazon-vpc.html)
+- [How Amazon VPC Works](https://docs.aws.amazon.com/vpc/latest/userguide/how-it-works.html)
