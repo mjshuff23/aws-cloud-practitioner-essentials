@@ -40,15 +40,11 @@ Block-level storage volumes behave like physical hard drives
 - Can create permissions on who can access your Buckets and Objects
 - **Objects** consist of *data*, *metadata*, and a *key*
 - Recall that when you modify a file in block storage, only the pieces that are changed are updated. When a file in object storage is modified, the *entire object* is updated.
-
-## When to use Amazon S3 vs Amazon EBS
-
-- **Amazon S3**:
-  - Web enabled
-  - Regionally distributed
-  - Has 11 9's of durability
-  - Offers cost savings
-  - Serverless
+- Web enabled
+- Regionally distributed
+- Has 11 9's of durability
+- Offers cost savings
+- Serverless
 
 ## Additional Resources
 
