@@ -29,6 +29,27 @@ Block-level storage volumes behave like physical hard drives
   - **Amazon EBS Snapshots** are incremental backups.  This means that the first backup taken of a volume copies all the data.  For subsequence backups, only the blocks of data that have changed since the most recent snapshot are saved.
     - Incremental backups are different from full backups, in which all the data in a storage volume copies each time a backup occurs.  The full backup includes data that has not changed since the most recent backup
 
+## Amazon Simple Storage Service (Amazon S3)
+
+- Amazon S3 is a data store that allows you to store and retrieve an unlimited amount of data at any scale.
+- Provides **object-level storage**
+- Data is stored as **Objects** and put inside of **Buckets**
+  - An Object is like a file and a Bucket is like a directory
+- Has a max Object upload size of 5 TB
+- Has Object versioning to protect from accidental deletion of an Object
+- Can create permissions on who can access your Buckets and Objects
+- **Objects** consist of *data*, *metadata*, and a *key*
+- Recall that when you modify a file in block storage, only the pieces that are changed are updated. When a file in object storage is modified, the *entire object* is updated.
+
+## When to use Amazon S3 vs Amazon EBS
+
+- **Amazon S3**:
+  - Web enabled
+  - Regionally distributed
+  - Has 11 9's of durability
+  - Offers cost savings
+  - Serverless
+
 ## Additional Resources
 
 - [Instance Stores](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/InstanceStorage.html)
