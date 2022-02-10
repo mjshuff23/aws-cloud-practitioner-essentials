@@ -95,7 +95,7 @@ If you run your own data center, you have to decide what to do if and when disas
 - This means you can interact with AWS by:
   1. Logging into the AWS Management Console
   2. Writing commands
-  3. Writing programs 
+  3. Writing programs
 
 ### AWS Elastic Beanstalk
 
@@ -108,7 +108,7 @@ If you run your own data center, you have to decide what to do if and when disas
   1. Adjust capacity
   2. Load balancing
   3. Automatic scaling
-  4. Application health monitoring 
+  4. Application health monitoring
 
 ### AWS CloudFormation
 

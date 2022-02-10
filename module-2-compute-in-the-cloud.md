@@ -56,10 +56,10 @@
 ### Amazon EC2 Overview
 
 - Imagine you are responsible for the architecture of your company's resources and need to support new websites.  With tradition on-premises resources, you have to do the following:
-  - Spend money upfront to purchase hardware
+  - Purchase hardware
   - Wait for the servers to arrive
-  - Install the servers in a physical location
-  - Make all the necessary configurations
+  - Install the servers in a physical location 
+  - Make necessary configurations
 - By comparison, with an Amazon EC2 instance you can use a virtual server to run applications in the AWS Cloud
   - You can provision and launch an Amazon EC2 instance within minutes
   - You can stop using it when you have finished running a workload
@@ -183,7 +183,6 @@ Each Amazon EC2 instance type is grouped under an instance family, which are opt
 - **Amazon Elastic Kubernetes Services (Amazon EKS)**
   - Does something similar to ECS, but with different tooling and features
   - Kubernetes is open-source software that enables you to deploy and manage containerized applications at scale
-  - 
 - Both ECS and EKS can run on top of EC2 instances
 - **Amazon Fargate**
   - A serverless compute platform for ECS or EKS
