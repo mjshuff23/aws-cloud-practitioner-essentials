@@ -100,6 +100,22 @@ Block-level storage volumes behave like physical hard drives
 - Amazon Aurora helps to reduce your database costs by reducing unnecessary Input/Output (I/O) operations, while ensuring that your database resources remain reliable and available
 - Consider Amazon Aurora if your workloads require high availability.  It replicates six copies of your data across three AZ's and continuously backs up your data to **Amazon S3**
 
+## Amazon DynamoDB
+
+- A serverless database
+- You create **tables**, a place where you can store and query data.
+  - Data is organized into **items** that have **attributes**
+- If you have one item in your table, or 2 million items in your table, DynamoDB manages the underlying storage for you. And you don't need to worry about the scaling of the system, up or down.
+- DynamoDB stores this data redundantly across availability zones and mirrors the data across multiple drives under the hood for you. This makes the burden of operating a highly available database, much lower.
+- DynamoDB, beyond being massively scalable, is also highly performant. DynamoDB has a **millisecond response time**. And when you have applications with potentially million of users, having scalability and reliable lightning fast response times is important.
+- Now, DynamoDB isn't a normal database. In the sense that it doesn't use the very widely used query language, sequel, or SQL. Relational databases, like a standard MySQL Database, require that you have a well defined schema, in place. That might consist of one, or many tables that might relate to each other. You then use SQL to query the data.
+- DynamoDB is a non-relational database. Non-relational databases tend to have simple flexible schemas, not complex rigid schemas, laying out multiple tables that all relate to each other.
+- With DynamoDB, you can **add and remove attributes from items in the table, at any time**. Not every item in the table has to have the same attributes. This is great for datasets that have some variation from item to item. Because of this flexibility, you cannot run complex SQL queries on it. Instead, you would write queries based on a small subset of attributes that are designated as keys.
+- Because of this, the queries that you run are non-relational databases tend to be simpler, and focus on a collection of items from one table, not queries than span multiple tables. This query pattern, along with other factors, including the way that the underlying system is designed, allows DynamoDB to be **very quick in response time**, and **highly scalable**
+- NoSQL DB, purpose built with specific use cases, and not the best fit for **every** workload out there.  Has a 1ms response time.  Fully managed, highly scalable.
+
+
+
 ## Additional Resources
 
 - [Instance Stores](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/InstanceStorage.html)
