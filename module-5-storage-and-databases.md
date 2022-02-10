@@ -114,9 +114,51 @@ Block-level storage volumes behave like physical hard drives
 - Because of this, the queries that you run are non-relational databases tend to be simpler, and focus on a collection of items from one table, not queries than span multiple tables. This query pattern, along with other factors, including the way that the underlying system is designed, allows DynamoDB to be **very quick in response time**, and **highly scalable**
 - NoSQL DB, purpose built with specific use cases, and not the best fit for **every** workload out there.  Has a 1ms response time.  Fully managed, highly scalable.
 
+## Amazon Redshift
 
+- **Amazon Redshift** is a data warehousing service that you can use for big data analytics
+  - Offers the ability to collect data from many sources and helps you to understand relationships and trends across data
+
+## AWS Database Migration Service (Amazon DMS)
+
+- Enables you to migrate relational databases, nonrelational databases, and other types of data stores.
+- You move data between a **source database** and a **target database**
+- The source and target databases can be of the **same type or different types.**
+- During the migration, your source database remains operational, reducing downtime for any applications that rely on the database.
+- **Homogenous Databases** are databases of the **same type**
+- **Heterogeneous Databases** are databases of **different types**
+  - You will utilize the **AWS Schema Conversion Tool** to create a new schema
+- Can also be used for:
+  - Development and testing database migrations
+  - Database consolidation
+  - Continuous database replication
+
+## Additional Database Services
+
+- There is no one-size-fits-all database for all purposes:
+  - **Amazon DocumentDB**
+    - A document database service that supports MongoDB workloads. (MongoDB is a document database program.)
+  - **Amazon Neptune**
+    - A graph database service. You can use Amazon Neptune to build and run applications that work with highly connected datasets, such as recommendation engines, fraud detection, and knowledge graphs.
+  - **Amazon Quantum Ledger Database (Amazon QLDB)**
+    - A ledger database service. You can use Amazon QLDB to review a complete history of all the changes that have been made to your application data.
+  - **Amazon Managed Blockchain**
+    - A service that you can use to create and manage blockchain networks with open-source frameworks. Blockchain is a distributed ledger system that lets multiple parties run transactions and share data without a central authority.
+  - **Amazon ElastiCache**
+    - A service that adds caching layers on top of your databases to help improve the read times of common requests. It supports two types of data stores: **Redis** and **Memcached**.
+  - **Amazon DynamoDB Accelerator (DAX)**
+    - An in-memory cache for DynamoDB. It helps improve response times from single-digit milliseconds to microseconds.
 
 ## Additional Resources
 
 - [Instance Stores](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/InstanceStorage.html)
 - [Amazon Elastic Block Store (Amazon EBS)](https://aws.amazon.com/ebs)
+- [Cloud Storage on AWS](https://aws.amazon.com/products/storage)
+- [AWS Storage Blog](https://aws.amazon.com/blogs/storage/)
+- [Hands-On Tutorial: Storage](https://aws.amazon.com/getting-started/hands-on/?awsf.getting-started-category=category%23storage&awsf.getting-started-content-type=content-type%23hands-on)
+- [AWS Customer Stories: Storage](https://aws.amazon.com/solutions/case-studies/?customer-references-cards.sort-by=item.additionalFields.publishedDate&customer-references-cards.sort-order=desc&awsf.customer-references-location=*all&awsf.customer-references-segment=*all&awsf.customer-references-product=product%23vpc%7Cproduct%23api-gateway%7Cproduct%23cloudfront%7Cproduct%23route53%7Cproduct%23directconnect%7Cproduct%23elb&awsf.customer-references-category=category%23storage)
+- [AWS Database Migration Service](https://aws.amazon.com/dms/)
+- [Databases on AWS](https://aws.amazon.com/products/databases)
+- [Category Deep Dive: Databases](https://aws.amazon.com/getting-started/deep-dive-databases/)
+- [AWS Database Blog](https://aws.amazon.com/blogs/database/)
+- [AWS Customer Stories: Databases](https://aws.amazon.com/solutions/case-studies/?customer-references-cards.sort-by=item.additionalFields.publishedDate&customer-references-cards.sort-order=desc&awsf.customer-references-location=*all&awsf.customer-references-segment=*all&awsf.customer-references-product=product%23vpc%7Cproduct%23api-gateway%7Cproduct%23cloudfront%7Cproduct%23route53%7Cproduct%23directconnect%7Cproduct%23elb&awsf.customer-references-category=category%23databases)
