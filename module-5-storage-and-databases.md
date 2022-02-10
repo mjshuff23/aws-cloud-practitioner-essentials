@@ -72,6 +72,34 @@ Block-level storage volumes behave like physical hard drives
   - The duplicate storage enables you to access data concurrently from all the AZ's in a region where a file system is located.
   - Additionally, on-premises servers can access **Amazon EFS** using **AWS Direct Connect**
 
+## Amazon Relational Database Service (Amazon RDS)
+
+- In a relational database, data is stored in a way that related it to other pieces of data
+- Relational databases use **structured query language (SQL)** to store and query data.  This allows data to be stored in an easily understandable, consistent, and scalable way
+- **Amazon RDS** is an RDBMS (Relational Database Management System) that allows you to run relational databases in the Cloud
+- **Benefits**:
+  - Automated Patching
+  - Backups
+  - Redundancy
+  - Failover
+  - Disaster Recovery
+- Automates tasks such as provisioning, database setup, patching, and backups.
+- Can be paired up with other services such as **Lambda**
+- Provides a number of different security options.  Many Amazon RDS database engines offer encryption at rest (protecting data while it is stored) and encryption in transit (protecting data while it is being sent and received)
+- **Amazon RDS** is available on six database engines, which optimize for memory, performance, or input/output (I/O).  Supported engines include:
+  - **Amazon Aurora**
+  - **PostreSQL**
+  - **MySQL**
+  - **MariaDB**
+  - **Oracle Database**
+  - **Microsoft SQL Server**
+
+### Amazon Aurora
+
+- An enterprise-class relational database.  It is compatible with MySQL and PostgreSQL relational databases.  It is up to **five times** faster than standard MySQL databases and up to **three times** faster than standard PostgreSQL databases
+- Amazon Aurora helps to reduce your database costs by reducing unnecessary Input/Output (I/O) operations, while ensuring that your database resources remain reliable and available
+- Consider Amazon Aurora if your workloads require high availability.  It replicates six copies of your data across three AZ's and continuously backs up your data to **Amazon S3**
+
 ## Additional Resources
 
 - [Instance Stores](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/InstanceStorage.html)
